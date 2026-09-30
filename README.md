@@ -6,6 +6,10 @@
 ### Natural-Language Business Analysis
 
 ![AbhiAI Analytics answering business questions](assets/business-question-demo.png)
+
+### Business Analytics Overview
+
+![AbhiAI Analytics KPI and trend analysis](assets/basic-analysis-demo.png)
 ---
 
 ## Why This Project Exists
