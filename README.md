@@ -1,7 +1,11 @@
 # AbhiAI Analytics Engine
 
 **A local-first business analytics project that combines Python, Pandas and DuckDB with evidence-grounded AI-assisted explanations. It analyzes structured business datasets, calculates KPIs, identifies trends and performance differences, answers analytical questions, and produces structured business reports while keeping numerical reasoning inside deterministic analytics code.**
+## Demo
 
+### Natural-Language Business Analysis
+
+![AbhiAI Analytics answering business questions](assets/business-question-demo.png)
 ---
 
 ## Why This Project Exists

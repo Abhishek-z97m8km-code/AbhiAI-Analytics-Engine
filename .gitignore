@@ -56,6 +56,7 @@ outputs/
 reports/
 *.html
 *.png
+!assets/*.png
 *.pdf
 
 # Logs
