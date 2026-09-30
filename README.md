@@ -10,6 +10,10 @@
 ### Business Analytics Overview
 
 ![AbhiAI Analytics KPI and trend analysis](assets/basic-analysis-demo.png)
+
+### Structured Business Report
+
+![AbhiAI Analytics structured business report](assets/structured-report-demo.png)
 ---
 
 ## Why This Project Exists
