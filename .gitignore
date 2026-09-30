@@ -47,7 +47,7 @@ build/
 *.parquet
 *.xlsx
 benchmark_data/
-data/
+/data/
 *.db
 *.sqlite
 
