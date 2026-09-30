@@ -1,6 +1,17 @@
 # AbhiAI Analytics Engine
 
 **A local-first business analytics project that combines Python, Pandas and DuckDB with evidence-grounded AI-assisted explanations. It analyzes structured business datasets, calculates KPIs, identifies trends and performance differences, answers analytical questions, and produces structured business reports while keeping numerical reasoning inside deterministic analytics code.**
+## Project Highlights
+
+- 📊 Business analytics engine for CSV/XLSX datasets
+- 🐍 Built with Python, Pandas and DuckDB
+- 💬 Natural-language business questions with validated intent parsing
+- 📈 KPI, trend, ranking, contribution and anomaly analysis
+- 🤖 Optional local LLM integration via Ollama
+- 🛡️ Evidence-grounded AI responses with faithfulness validation
+- ⚡ Tested on a synthetic 1,000,000-row dataset
+- 🧪 39 automated tests
+- 🔒 Local-first architecture — no cloud API required
 ## Demo
 
 ### Natural-Language Business Analysis
@@ -18,7 +29,7 @@
 
 ## Why This Project Exists
 
-This portfolio project demonstrates the ability to build a production-grade business analytics engine that:
+This portfolio project demonstrates the design and implementation of a scalable, evidence-grounded business analytics engine that:
 
 - **Scales to millions of rows** using DuckDB's columnar analytics without loading data into memory
 - **Falls back to Pandas** for smaller datasets and compatibility
@@ -468,7 +479,7 @@ abhiai-analytics-engine/
 │   ├── basic_analysis.py         # Load data, generate insights
 │   ├── ask_business_questions.py # Natural-language Q&A
 │   └── generate_report.py        # Structured report generation
-├── tests/                        # Unit tests (to be created)
+├── tests/                        # Automated test suite
 ├── docs/
 │   ├── ARCHITECTURE.md           # Architecture documentation
 │   └── BENCHMARK.md              # 1M-row benchmark details
