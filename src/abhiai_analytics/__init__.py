@@ -1,0 +1,58 @@
+"""AbhiAI Analytics Engine - Evidence-grounded business analytics."""
+
+from .data import DataManager, DataLoader
+from .intelligence import (
+    BusinessInsightEngine,
+    BusinessQuestionEngine,
+    BusinessResponseEngine,
+    BusinessReportEngine,
+    analyze_dataset,
+    BusinessInsight,
+    BusinessQuestionResult,
+    BusinessResponse,
+    BusinessReport,
+    AnalyticsIntent,
+    AnalyticsOperation,
+    QueryStatus,
+    Evidence,
+    EvidenceStrength,
+    FaithfulnessStatus,
+    GenerationMethod,
+    InsightCategory,
+    InterpretationType,
+    Limitation,
+    ReportDetailLevel,
+    ReportType,
+    ResponseLanguage,
+    ResponseMode,
+)
+
+__version__ = "0.1.0"
+
+__all__ = [
+    "DataManager",
+    "DataLoader",
+    "BusinessInsightEngine",
+    "BusinessQuestionEngine",
+    "BusinessResponseEngine",
+    "BusinessReportEngine",
+    "analyze_dataset",
+    "BusinessInsight",
+    "BusinessQuestionResult",
+    "BusinessResponse",
+    "BusinessReport",
+    "AnalyticsIntent",
+    "AnalyticsOperation",
+    "QueryStatus",
+    "Evidence",
+    "EvidenceStrength",
+    "FaithfulnessStatus",
+    "GenerationMethod",
+    "InsightCategory",
+    "InterpretationType",
+    "Limitation",
+    "ReportDetailLevel",
+    "ReportType",
+    "ResponseLanguage",
+    "ResponseMode",
+]

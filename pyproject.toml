@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "abhiai-analytics-engine"
+version = "0.1.0"
+description = "Local-first business analytics engine combining Python, Pandas and DuckDB with evidence-grounded AI-assisted explanations"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+    "duckdb>=1.2.1",
+    "pandas>=3.0.5",
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Office/Business :: Financial",
+]
+keywords = ["analytics", "business-intelligence", "data-analysis", "duckdb", "pandas", "kpi", "reporting"]
+
+[project.optional-dependencies]
+ollama = ["ollama>=0.6.2"]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=5.0.0",
+    "ruff>=0.5.0",
+    "mypy>=1.10.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/abhishekmishra/abhiai-analytics-engine"
+Repository = "https://github.com/abhishekmishra/abhiai-analytics-engine"
+Issues = "https://github.com/abhishekmishra/abhiai-analytics-engine/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["abhiai_analytics*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+select = ["E", "W", "F", "I", "B", "C4", "UP"]
+ignore = ["E501", "B008"]
+per-file-ignores = { "examples/*.py" = ["T201", "T203"], "tests/*.py" = ["S101", "S106"] }
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true

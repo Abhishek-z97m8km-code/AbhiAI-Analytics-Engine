@@ -1,0 +1,11 @@
+# AbhiAI Analytics Engine - Portfolio Dependencies
+# Core analytics dependencies
+duckdb>=1.2.1
+pandas>=3.0.5
+
+# Optional: for local LLM support (Ollama)
+# ollama>=0.6.2
+
+# Development dependencies
+pytest>=8.0.0
+pytest-cov>=5.0.0
