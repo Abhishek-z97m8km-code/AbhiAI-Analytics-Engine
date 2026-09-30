@@ -1,0 +1,25 @@
+Order Date,Region,Item Type,Sales Channel,Total Revenue,Total Cost,Total Profit,Units Sold
+2026-01-01,North,Electronics,Online,15000.00,9000.00,6000.00,50
+2026-01-15,South,Clothing,Offline,8000.00,4800.00,3200.00,80
+2026-02-01,East,Electronics,Online,22000.00,13200.00,8800.00,65
+2026-02-10,West,Home & Garden,Online,12000.00,7200.00,4800.00,40
+2026-03-05,Central,Clothing,Offline,9500.00,5700.00,3800.00,95
+2026-03-20,North,Electronics,Online,18000.00,10800.00,7200.00,55
+2026-04-01,South,Home & Garden,Offline,11000.00,6600.00,4400.00,55
+2026-04-15,East,Electronics,Online,25000.00,15000.00,10000.00,70
+2026-05-01,West,Clothing,Online,10000.00,6000.00,4000.00,100
+2026-05-20,Central,Electronics,Offline,20000.00,12000.00,8000.00,60
+2026-06-01,North,Home & Garden,Online,14000.00,8400.00,5600.00,70
+2026-06-15,South,Electronics,Offline,16000.00,9600.00,6400.00,45
+2026-07-01,East,Clothing,Online,9000.00,5400.00,3600.00,90
+2026-07-10,West,Electronics,Online,23000.00,13800.00,9200.00,62
+2026-08-05,Central,Home & Garden,Offline,13000.00,7800.00,5200.00,65
+2026-08-20,North,Electronics,Online,19000.00,11400.00,7600.00,58
+2026-09-01,South,Clothing,Online,10500.00,6300.00,4200.00,105
+2026-09-15,East,Home & Garden,Offline,11500.00,6900.00,4600.00,52
+2026-10-01,West,Electronics,Online,24000.00,14400.00,9600.00,68
+2026-10-20,Central,Clothing,Offline,9800.00,5880.00,3920.00,98
+2026-11-01,North,Electronics,Online,17500.00,10500.00,7000.00,53
+2026-11-10,South,Home & Garden,Online,12500.00,7500.00,5000.00,58
+2026-12-01,East,Electronics,Offline,21000.00,12600.00,8400.00,60
+2026-12-15,West,Clothing,Online,11000.00,6600.00,4400.00,110

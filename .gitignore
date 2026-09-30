@@ -42,6 +42,8 @@ build/
 
 # Large datasets and benchmark data
 *.csv
+# Allow the safe synthetic demo dataset
+!examples/sample_sales.csv
 *.parquet
 *.xlsx
 benchmark_data/

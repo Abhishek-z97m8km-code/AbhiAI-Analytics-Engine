@@ -58,7 +58,7 @@ This portfolio project demonstrates the ability to build a production-grade busi
 - **Serialization**: JSON round-trip with validation
 
 ### Testing & Validation
-- **474+ unit tests** covering primitives, integration, and end-to-end flows
+- - **39 automated tests** covering business intelligence, natural-language questions, grounded    responses, and structured reports
 - **1M-row benchmark** documented with measured timings
 - **Deterministic KPIs**: Reproducible results across backends
 
