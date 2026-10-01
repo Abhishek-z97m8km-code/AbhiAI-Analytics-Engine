@@ -132,7 +132,8 @@ BusinessReportEngine (Phase 5D)
 
 ```bash
 # Clone and enter the project
-cd abhiai-analytics-engine
+git clone https://github.com/Abhishek-z97m8km-code/AbhiAI-Analytics-Engine.git
+cd AbhiAI-Analytics-Engine
 
 # Create virtual environment
 python -m venv .venv

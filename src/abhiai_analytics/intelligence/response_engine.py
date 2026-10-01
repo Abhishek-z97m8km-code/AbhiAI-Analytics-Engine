@@ -114,7 +114,10 @@ class BusinessResponseEngine:
         if fact.period:
             return f"For {fact.period}, {fact.metric or fact.label} was {value}."
         if isinstance(fact.value, str):
-            return f"{fact.label}: {fact.value}."
+            text = fact.value.rstrip()
+            if text.endswith((".", "!", "?")):
+                return f"{fact.label}: {text}"
+            return f"{fact.label}: {text}."
         return f"{fact.label} was {value}."
 
     @staticmethod

@@ -126,12 +126,29 @@ class BusinessInsightEngine:
                     summary = "Profit declined despite revenue growth; the available aggregates show costs absorbed more of revenue."
                 elif cp > rp:
                     summary = "Costs changed faster than revenue, which mathematically pressured profit performance."
-                else:
+                elif rp > cp:
                     summary = "Revenue changed faster than costs, which mathematically supported profit performance."
-                insights.append(self._insight(dataset_id, InsightCategory.PROFITABILITY, "Revenue-cost-profit relationship", summary,
-                    InterpretationType.DERIVED_RELATIONSHIP, EvidenceStrength.STRONG,
-                    evidence=Evidence("Adjacent-period percentage changes", {"revenue_change_percent": rp, "cost_change_percent": cp, "profit_change_percent": pp})))
+                else:
+                    summary = "Revenue and costs changed at the same rate, so their relative growth did not change profit margin."
 
+                insights.append(
+                    self._insight(
+                        dataset_id,
+                        InsightCategory.PROFITABILITY,
+                        "Revenue-cost-profit relationship",
+                        summary,
+                        InterpretationType.DERIVED_RELATIONSHIP,
+                        EvidenceStrength.STRONG,
+                        evidence=Evidence(
+                            "Adjacent-period percentage changes",
+                            {
+                                "revenue_change_percent": rp,
+                                "cost_change_percent": cp,
+                                "profit_change_percent": pp,
+                            },
+                        ),
+                    )
+                )
     def _insight(self, dataset_id, category, title, summary, interpretation, strength, *, evidence, metric=None,
                  current=None, comparison=None, absolute=None, percentage=None, dimensions=None, period=None,
                  importance="informational", limitations=()):
